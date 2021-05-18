@@ -1,0 +1,10 @@
+package capg_ja17_labassignment1;
+
+public class PowerOfTwo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,33 @@
+package com.capgemini.classexample;
+import java.util.*;
+public class RemoveDuplicates {     
+	    static void removeDuplicate(char str[], int len)   
+	    {   
+	        int index = 0;    
+	        for (int i = 0; i < len; i++)   
+	        {     
+	            int j;   
+	            for (j = 0; j < i; j++)    
+	            {   
+	                if (str[i] == str[j])   
+	                {   
+	                    break;   
+	                }   
+	            }    
+	            if (j == i)    
+	            {   
+	                str[index++] = str[i];   
+	            }   
+	        }   
+	        System.out.println(String.valueOf(Arrays.copyOf(str, index)));   
+	    }   
+	    
+	    // main() method starts  
+	    public static void main(String[] args)   
+	    {   
+
+	        char str[] = "geeksforgeeks".toCharArray();
+	        int n = str.length;
+	        System.out.println(removeDuplicate(str, n));
+	    }   
+	}

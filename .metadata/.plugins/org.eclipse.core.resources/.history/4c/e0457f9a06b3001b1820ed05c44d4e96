@@ -1,0 +1,30 @@
+package optional;
+import java.util.Scanner;
+import java.lang.Math.*;
+public class Cube {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int d, i,s=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the value of n:");
+		int n=sc.nextInt();
+		int [] numbers=new int[n];
+		Scanner sn=new Scanner(System.in);
+		System.out.println("enter the numbers:");
+		for(int j=0;j<n;j++)
+		{
+			numbers[j]=sn.nextInt();
+		}
+		System.out.println("the numbers are:");
+		for(int i=0;i<n;i++) {
+		int digit=sn.nextInt();
+		d=digit%10;
+		s=s+d*d*d;
+		digit/=10;
+		}
+		System.out.println("the sum is:"+s);
+		
+	}
+
+}

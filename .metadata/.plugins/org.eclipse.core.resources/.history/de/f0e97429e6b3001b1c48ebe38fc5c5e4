@@ -1,0 +1,27 @@
+package com.capgemini.classexample;
+import java.util.Scanner;
+public class Student {
+private int stdId;
+private String stdName;
+private float[]marks=new float[5];
+Scanner sc=new Scanner(System.in);n
+public void readStudentDetails() {
+	System.out.println("Enter the student id:");
+	stdId=sc.nextInt();
+	System.out.println("Enter the student name:");
+	sc.nextInt();
+	stdName=sc.nextLine();
+	for(int i=0;i<marks.length;i++) {
+		marks[i]=sc.nextFloat();
+	}
+}
+public void displayStudentDetails() {
+	System.out.println("the student id is:"+stdId);
+	System.out.println("the student name:"+stdName);
+	System.out.println("the marks are:");
+	for(int i=0;i<marks.length;i++) {
+		marks[i]=sc.nextFloat();
+		
+	}
+}
+}

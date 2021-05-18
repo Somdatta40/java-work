@@ -1,0 +1,22 @@
+package capg_ja17_labassignment1;
+
+import java.util.Scanner;
+public class Difference {
+	public static int diff(int n) {
+		int i,a,b,c,s;
+		a=(n*(n+1)*(2*n+1))/6;
+		b=(n*(n+1))/2;
+		c=b*b;
+		s=c-a;
+		return s;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n;
+		Scanner sn=new Scanner(System.in);
+		System.out.println("enter the digit:");
+		 n=sn.nextInt();
+		 System.out.println("the sum of number is:"+diff(n));
+	}
+
+}

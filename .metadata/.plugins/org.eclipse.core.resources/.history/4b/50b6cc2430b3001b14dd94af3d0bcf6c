@@ -1,0 +1,26 @@
+package capg_ja17_labassignment1;
+
+import java.util.Scanner;
+public class IncreasingNumber {
+	public static int inc(int n) {
+		int i,cn,an,flag=1;
+		while(n>1)
+			{
+				cn=n%10;
+				n=n/10;
+				an=n%10;
+				if(cn>=an)
+					flag++;
+			}
+		return (flag);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n;
+		Scanner sn=new Scanner(System.in);
+		System.out.println("enter the digit:");
+		 n=sn.nextInt();
+		 System.out.println(n+"is an increasing no.");
+	}
+
+}

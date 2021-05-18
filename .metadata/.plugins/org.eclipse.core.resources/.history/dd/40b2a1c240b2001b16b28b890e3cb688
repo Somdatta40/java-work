@@ -1,0 +1,23 @@
+
+public class StrongNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=145, i, s=0, d, temp=n, f=1;
+		while(n>0)
+		{
+			d=n%10;
+			for(i=1;i<=d;i++)
+			{
+				f=f*i;
+			}
+			s=s+f;
+			n=n/10;
+		}
+		if(s==temp)
+			System.out.println("it's a strong number");
+		else
+			System.out.println("not a strong number");
+	}
+
+}
